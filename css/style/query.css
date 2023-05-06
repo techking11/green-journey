@@ -1,0 +1,114 @@
+/* 
+    Navigation Panal
+------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 991px) {
+    .nav-link {
+        font-size: 13px;
+    }
+    iframe {
+        height: 300px;
+    }
+    .translator {
+        position: absolute !important;
+        top: 40% !important;
+        right: 20% !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .address {
+        padding: 8px;
+    }
+    .media {
+        display: none;
+    }
+    .navtop .translate {
+        visibility: visible;
+    }
+    .nav-item:after {
+        display: none;
+    }
+    .nav-link:not(.dropdown-toggle)::before {
+        position: absolute;
+        display: block;
+        top: 15px;
+        left: 0;
+        width: 11px;
+        height: 1px;
+        content: "";
+        border: none;
+        background-color: transparent;
+        vertical-align: 0;
+    }
+    .plus::before {
+        position: absolute;
+        display: block;
+        top: 21px;
+        left: 150px;
+        width: 11px;
+        height: 1px;
+        content: "";
+        border: none;
+        background-color: #fff;
+        font-weight: bold;
+        vertical-align: 0;
+    }
+    .dropdown-toggle::after {
+        position: absolute;
+        display: block;
+        top: 16px;
+        left: 126px;
+        width: 1px;
+        height: 11px;
+        content: "";
+        border: none;
+        background-color: #fff;
+        vertical-align: 0;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+    }
+    .dropdown-toggle[aria-expanded="true"]::after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    .dropdown-menu {
+        padding: 0 !important;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+    }
+    .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+    .navigation-wrap {
+        overflow: auto;
+    }
+}
+
+/*
+About Us
+------------------------------------------------------------------ */
+
+@media screen and (max-width:995px) {
+    .sm-box {
+        height: 305px;
+    }
+    .card .icon {
+        top: 45%;
+        left: 35%;
+    }
+}
+@media screen and (max-width:767px) {
+    .sm-box {
+        margin-top: 5%;
+    }
+    .card .icon {
+        top: 50%;
+        left: 40%;
+    }
+}
+error
